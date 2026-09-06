@@ -1,6 +1,8 @@
-# 36. Data-Moat History Accumulation Agent
+# 36. Data-Moat History Accumulation
 
-Accumulates proprietary scraped history into datasets and APIs that grow more valuable over time. This is the compounding layer for every other agent in the stack.
+Part of **AI-Powered Data & Lead Platform**. Turn local market data into warm leads.
+
+Accumulates proprietary scraped history into datasets and APIs that grow more valuable over time. This is the compounding layer for every other product.
 
 ## Metrics
 

@@ -1,4 +1,6 @@
-# Business Proposal — Agentic Data & Lead Platform
+# Business Proposal — AI-Powered Data & Lead Platform
+
+**Turn local market data into warm leads.**
 
 **Date:** 2026-09-06
 **Company:** [Your Business Name]
@@ -14,6 +16,8 @@ We are building an AI-powered data and lead-generation platform for Malaysian sm
 **The opportunity:** Local businesses spend billions annually on marketing that returns poor leads. We replace guesswork with data: real-time market intelligence, scored prospects, and AI-drafted outreach that gets responses.
 
 **Our edge:** We don't just scrape data — we accumulate a proprietary history layer that compounds in value over time. Competitors can scrape the same public listings today, but they cannot replicate our historical dataset or our AI-driven quality signals.
+
+**Active products:** #36 Data-Moat History, #27 Price-Tracking, #11 Public Data API, #17 Lead-Gen, #30 Review Response. Follow-ons: #7 chatbot, #34 approval workflow, #35 local-services ops.
 
 **Ask:** We are seeking [investment / partnership / pilot clients] to validate the platform and scale to RM4,000–12,000 MRR within 4 months.
 
@@ -34,9 +38,9 @@ We are building an AI-powered data and lead-generation platform for Malaysian sm
 
 ## 3. Solution
 
-We deliver three core products, powered by a shared data foundation:
+We deliver five active products, powered by a shared data foundation, plus three follow-ons:
 
-### 3.1 Data-Moat History Layer (Foundation)
+### 3.1 Data-Moat History Layer (#36) — Foundation
 
 - Continuously scrape and archive public market data: Google Maps listings, retailer prices, review velocity, competitor rates.
 - AI anomaly detection validates every new snapshot against historical baselines.
@@ -55,7 +59,7 @@ We deliver three core products, powered by a shared data foundation:
 
 - Monitor client reviews across Google, Facebook, TripAdvisor in real time.
 - AI drafts responses in the business owner's voice within 24 hours.
-- Sensitive or negative reviews flagged for human approval before posting.
+- Sensitive or negative reviews flagged for human approval (#34) before posting.
 - **Pilot offer:** Free 30-day trial. Retainer: RM800/mo.
 
 ### 3.4 Public Data API (#11)
@@ -64,6 +68,18 @@ We deliver three core products, powered by a shared data foundation:
 - Use cases: competitor price tracking, market research, lead enrichment.
 - Pricing: RM200–800/mo per dataset, API-key auth, usage-based billing.
 - **Target customers:** E-commerce ops teams, VC research, competitor intelligence firms.
+
+### 3.5 Price-Tracking / Deal Alerts (#27)
+
+- Track product prices and send deal alerts using the same data-moat history.
+- Velocity-based scoring instead of naive thresholds.
+- **Pricing:** Free watchlists + RM9.90/mo pro tier.
+
+### Follow-ons (Phase 3–4)
+
+- **#7 White-label chatbot** — booking/FAQ bot upsell to review and lead-gen clients. RM1,500–3,000/mo.
+- **#34 Human-approval workflow** — approval inbox, audit trail, rollback for #30, #17, and #7. Sells as reliability layer.
+- **#35 Local-services ops** — quote-generation, scheduling, follow-up for plumbers/HVAC/roofers. Higher ticket than lead-gen alone.
 
 ---
 
@@ -96,7 +112,8 @@ We deliver three core products, powered by a shared data foundation:
 | 2 | Lead-gen engine (#17) | Month 1–2 | RM2,000–4,000 | ⏳ Next |
 | 3 | Review response (#30) | Month 2–4 | RM800–1,500 | ⏳ Planned |
 | 3 | White-label chatbot (#7) | Month 3–4 | RM1,500–3,000 | ⏳ Planned |
-| 4 | Blog/affiliate (#1) | Month 4+ | RM1,000–2,000 | ⏳ Planned |
+| 3 | Local-services ops (#35) | Month 3–4 | RM1,500–3,000 | ⏳ Planned |
+| 4 | Case studies + inbound SEO | Month 4+ | RM1,000–2,000 | ⏳ Planned |
 
 **Milestones:**
 - **Day 14:** 1 source live, 14 days clean history, API returning time-series <200ms p95, 1 free trial user.
@@ -113,7 +130,9 @@ We deliver three core products, powered by a shared data foundation:
 | Data API | RM200–800/mo per dataset | E-commerce, research, VC | 90%+ |
 | Lead-gen retainer | RM800–2,000/mo per niche | Agencies, SMBs | 70–85% |
 | Review response | RM800/mo retainer | Local businesses | 80%+ |
-| Chatbot upsell | RM1,500–3,000/mo | Existing review clients | 85%+ |
+| Price-tracking bot | RM9.90/mo pro | Consumers | 70–90% |
+| Chatbot upsell | RM1,500–3,000/mo | Existing review/lead clients | 85%+ |
+| Local-services ops | RM1,500–3,000/mo | Trades, HVAC, dental | 80%+ |
 | Dataset exports | RM400–1,000/mo one-time | Non-API buyers | 95%+ |
 
 **Unit economics (example — data API):**
@@ -137,9 +156,9 @@ We deliver three core products, powered by a shared data foundation:
 - Convert to RM800–2,000/mo retainer on pilot success.
 
 ### Phase 3: Upsell funnel (Month 2–4)
-- Existing review clients → chatbot upsell ("reviews → booking bot").
-- Existing lead-gen clients → review management add-on.
-- Bundle pricing: review + chatbot = RM2,000/mo (vs RM2,300 separately).
+- Existing review clients → chatbot upsell (#7) ("reviews → booking bot").
+- Existing lead-gen clients → review management (#30) + local-services ops (#35) add-on.
+- Bundle pricing: review + chatbot + ops = RM3,500/mo (vs RM4,100 separately).
 
 ### Phase 4: Content compounding (Month 4+)
 - Publish case studies and market reports from our data layer.
@@ -155,14 +174,15 @@ We deliver three core products, powered by a shared data foundation:
 | Directory sites (Google Maps, Yelp) | List businesses, sell ads | We sell actionable leads, not clicks |
 | Data brokers (BuiltWith, ZoomInfo) | Static company databases | We have real-time, scored, time-series data |
 | Marketing agencies | Social ads, SEO retainers | We deliver warm leads with observable pain signals, not impressions |
-| Review management tools (Birdeye, Podium) | Review monitoring + response | We add lead-gen and data APIs on the same data layer |
+| Review management tools (Birdeye, Podium) | Review monitoring + response | We add lead-gen, data APIs, and ops tooling on the same data layer |
 | Generic scrapers | One-off data extraction | We accumulate proprietary history + AI quality control |
 
 **The moat:**
 1. **Data depth:** 3 years of price curves + review velocity = competitors can't buy this.
 2. **Schema lock-in:** Once a customer builds workflows around our API schema, switching cost is high.
-3. **AI QA layer:** LLM-as-judge for anomalies + response drafting = quality consistency at scale.
+3. **AI QA layer:** LLM-as-judge for anomalies + response drafting + #34 approval workflow = quality consistency at scale.
 4. **Speed:** We move fast as a solo operator with AI agents; incumbents are slow and expensive.
+5. **Local density:** Same data layer powers lead-gen, review response, ops tooling, and APIs — multi-product leverage from one scrape.
 
 ---
 
@@ -186,8 +206,8 @@ We deliver three core products, powered by a shared data foundation:
 | 0 | 0 | 0 | RM0 | -RM200 |
 | 1 | 2 | 0–2 | RM0–800 | -RM200 to +RM600 |
 | 2 | 3 | 3–5 | RM2,400–8,000 | +RM2,200–7,800 |
-| 3 | 4 | 5–8 | RM4,000–12,000 | +RM3,800–11,800 |
-| 4 | 4–5 | 8–12 | RM8,000–16,000 | +RM7,800–15,800 |
+| 3 | 5 | 5–8 | RM4,000–12,000 | +RM3,800–11,800 |
+| 4 | 5–6 | 8–12 | RM8,000–16,000 | +RM7,800–15,800 |
 
 **Break-even:** Month 1–2
 **Target RM4,000 MRR:** Month 3
@@ -215,11 +235,11 @@ We deliver three core products, powered by a shared data foundation:
 
 | Risk | Likelihood | Impact | Mitigation |
 |---|---|---|---|
-| Platform ban (Google/Yelp) | Medium | High | Proxy rotation + rate limits + official API fallbacks |
+| Platform ban / source layout changes | Medium | High | Proxy rotation + rate limits + official API fallbacks; #34 approval layer catches failures fast |
 | LLM output quality / hallucination | Medium | Medium | LLM-as-judge eval pipeline + human spot checks |
 | Client churn (price sensitivity) | Medium | Medium | 30-day free pilots prove ROI before billing |
 | Competitor replication | Low | Medium | Data moat + schema lock-in + speed |
-| Regulatory (PDPA, SST) | Low | High | Legal templates + below-threshold revenue strategy |
+| Regulatory (PDPA, SST) | Low | High | Legal templates + below-threshold revenue strategy; outreach-only use of scraped contacts |
 | Single-founder burnout | Medium | High | Hard weekly time budget (14 hrs/wk); kill criteria for dead ideas |
 
 ---
@@ -238,7 +258,7 @@ We deliver three core products, powered by a shared data foundation:
 We are seeking:
 
 **Option A: Pilot Clients**
-- 5–10 local businesses for free 30-day trials of review response or lead-gen.
+- 5–10 local businesses for free 30-day trials of review response (#30), lead-gen (#17), or local-services ops (#35).
 - Commitment: 30 minutes of feedback per week.
 - Benefit: First-mover on a service that will scale; locked-in preferential pricing for life.
 

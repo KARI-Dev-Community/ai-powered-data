@@ -1,4 +1,6 @@
-# Tracker — Progress, Finance, and Decision Log
+# Tracker — AI-Powered Data & Lead Platform
+
+Turn local market data into warm leads.
 
 The control layer for the ROI plan in [`ROADMAP.md`](./ROADMAP.md). If a number isn't recorded here, it didn't happen. Update at least weekly.
 
@@ -13,8 +15,8 @@ All figures in Malaysian Ringgit (RM).
 | 0 — Foundation | ☐ Not started | Scored prospects in DB | 0 | 200 | |
 | 1 — Quick wins (#27, #11) | ☐ Not started | Combined revenue | RM0 | RM100/mo | |
 | 2 — Lead engine (#17) | ☐ Not started | Pilots converting | 0 | 2 | |
-| 3 — Monetize (#30→#7→#19) | ☐ Not started | MRR | RM0 | RM4,000/mo | |
-| 4 — Compound (#1, #10) | ☐ Not started | Total MRR | RM0 | RM8,000–12,000/mo | |
+| 3 — Monetize (#30→#7→#35) | ☐ Not started | MRR | RM0 | RM4,000/mo | |
+| 4 — Compound (case studies, SaaS package) | ☐ Not started | Total MRR | RM0 | RM8,000–12,000/mo | |
 
 Status values: ☐ Not started · ◐ In progress · ☑ Done · ✗ Blocked
 
@@ -29,8 +31,8 @@ Only track ideas that are past "idea" stage. Drop anything you're not working on
 | #17 lead-gen | | — | — | 0 | |
 | #30 review response | | 0 | RM0 | 0 | |
 | #7 chatbot | | 0 | RM0 | 0 | |
-| #19 bookkeeping | | 0 | RM0 | 0 | |
-| #36 data moat (archive) | | — | — | 0 | start logging day 1 |
+| #35 local-services ops | | 0 | RM0 | 0 | |
+| #36 data moat | | — | — | 0 | start logging day 1 |
 
 ## 3. Finance ledger (monthly)
 

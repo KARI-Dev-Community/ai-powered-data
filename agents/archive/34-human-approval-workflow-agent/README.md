@@ -1,6 +1,6 @@
 # 34. Human-Approval Workflow Layer
 
-Provides the human-approval layer for semi-autonomous agents — approval inbox, audit trail, one-click rollback. The realistic 2026 definition of "passive income": 5 minutes per day of supervised autonomy.
+Provides the human-approval layer for semi-autonomous agents — approval inbox, audit trail, one-click rollback. Realistic 2026 operations: 5 minutes per day of supervised autonomy.
 
 ## Metrics
 
@@ -62,7 +62,7 @@ Agents can't safely hold payment credentials or make purchases (see gap analysis
 ### Month 2+ — Scale
 - Add "learn from approvals" engine: after N consecutive approvals of same action class, propose raising autonomy (never auto-raise)
 - Team tier: multiple approvers, approval chains, 2FA, Slack-based escalation policies
-- Bundle with #31 (monitoring) + #33 (eval harness) as "Agent Reliability Stack" retainer (RM1,500/mo)
+- Bundle with #30 (review response) + #17 (lead-gen) as reliability add-on (RM400–800/mo)
 - White-label: agencies resell to their agent clients with custom branding + SOC2-ready audit export
 
 ## Unit Economics

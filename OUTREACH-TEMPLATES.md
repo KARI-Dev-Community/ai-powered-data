@@ -1,6 +1,8 @@
-# Outreach Templates — Phase 2 Lead Engine (#17, #30)
+# Outreach Templates — AI-Powered Data & Lead Platform
 
-Executable copy for the roadmap's critical path. Send counts and rules first, templates after.
+Turn local market data into warm leads.
+
+Executable copy for the lead engine (#17, #30). Send counts and rules first, templates after.
 
 All amounts in RM.
 

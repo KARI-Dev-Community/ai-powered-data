@@ -1,6 +1,8 @@
-# 11. Public Data Aggregation → API Product
+# 11. Public Data Aggregation → API
 
-Builds data pipelines and APIs that aggregate public data into a paid, rate-limited REST product. This is the fastest path to recurring revenue from the #36 data-moat foundation.
+Part of **AI-Powered Data & Lead Platform**. Turn local market data into warm leads.
+
+Builds data pipelines and APIs that aggregate public local-market data into a paid, rate-limited REST product. Fastest path to recurring revenue from the #36 data-moat foundation.
 
 ## Metrics
 

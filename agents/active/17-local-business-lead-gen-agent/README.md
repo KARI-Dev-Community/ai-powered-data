@@ -1,6 +1,8 @@
-# 17. Local Business Lead-Gen Agent
+# 17. Local Business Lead-Gen
 
-Finds and qualifies leads for local businesses using problem detection (bad reviews, no chat widget, no booking, slow site) and drafts personalized cold outreach. This is the lead engine for the entire Phase 2–3 monetization stack.
+Part of **AI-Powered Data & Lead Platform**. Turn local market data into warm leads.
+
+Finds and qualifies leads for local businesses using problem detection (bad reviews, no chat widget, no booking, slow site) and drafts personalized cold outreach. This is the lead engine.
 
 ## Metrics
 

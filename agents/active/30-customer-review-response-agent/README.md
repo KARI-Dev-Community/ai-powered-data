@@ -1,6 +1,8 @@
-# 30. Customer Review Response / Reputation Agent
+# 30. Customer Review Response / Reputation
 
-Monitors and responds to customer reviews across Google, Yelp, TripAdvisor, and Facebook on behalf of local-business clients. Easiest sell in the Phase 3 upsell chain because every business owner understands review reputation.
+Part of **AI-Powered Data & Lead Platform**. Turn local market data into warm leads.
+
+Monitors and responds to customer reviews across Google, Yelp, TripAdvisor, and Facebook on behalf of local-business clients. Easiest upsell because every owner understands review reputation.
 
 ## Metrics
 

@@ -1,4 +1,6 @@
-# Technical Setup Checklist — Getting Started
+# Technical Setup — AI-Powered Data & Lead Platform
+
+Turn local market data into warm leads.
 
 All figures in Malaysian Ringgit (RM). Total running cost: **~RM60–200/mo + RM40 domain**.
 
@@ -34,7 +36,7 @@ All figures in Malaysian Ringgit (RM). Total running cost: **~RM60–200/mo + RM
 - [ ] Lemon Squeezy or Paddle account (or Billplz for MYR/FPX local clients)
 - [ ] Amazon SES or Resend account
 - [ ] Anthropic + OpenAI API keys with **hard monthly spend caps**
-- [ ] GitHub repo: `passive-income-stack`
+- [ ] GitHub repo: `ai-powered-data`
 - [ ] Optional: Loom account (free tier) for video audits in #17
 
 ## First sprint — 5 days
@@ -42,7 +44,7 @@ All figures in Malaysian Ringgit (RM). Total running cost: **~RM60–200/mo + RM
 ### Day 1–2 — Phase 0 (scraper + prospect DB)
 
 ```bash
-mkdir -p passive-income-stack/{scrapers,enrichment,outreach,api}
+mkdir -p ai-powered-data/{scrapers,enrichment,outreach,api}
 ```
 
 - One scraper: Google Maps businesses for a niche+city → dedupe → SQLite with name, phone, email, website, review count, unanswered-review estimate

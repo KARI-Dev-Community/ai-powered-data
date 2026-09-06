@@ -1,6 +1,8 @@
-# Client Contract Templates
+# Client Contract Templates — AI-Powered Data & Lead Platform
 
-Short-form agreements for pilot and retainer work (#30, #7, #19, #35). Plain-language, solo-operator scale — have a lawyer review before high-value deals. Fill every `{{placeholder}}`.
+Turn local market data into warm leads.
+
+Short-form agreements for pilot and retainer work (#30, #7, #35). Plain-language, solo-operator scale — have a lawyer review before high-value deals. Fill every `{{placeholder}}`.
 
 ---
 

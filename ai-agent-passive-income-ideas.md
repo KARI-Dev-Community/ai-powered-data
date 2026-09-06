@@ -1,4 +1,8 @@
-# 30 AI-Agent Passive Income Ideas — Full Breakdown
+# Research Notes — Idea Library
+
+Historical research that led to **AI-Powered Data & Lead Platform** — *Turn local market data into warm leads.*
+
+The live product focuses on **#36 data moat**, **#11 public data API**, **#27 price tracking**, **#17 lead-gen**, and **#30 review response**. Remaining ideas are archived in `agents/archive/`.
 
 | # | Idea (Core Agent) | Risk | Capital | Success Prob. | Time to First RM | Skills Needed |
 |---|---|---|---|---|---|---|

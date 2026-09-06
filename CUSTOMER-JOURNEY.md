@@ -1,4 +1,6 @@
-# Customer / User Journey
+# Customer Journey — AI-Powered Data & Lead Platform
+
+Turn local market data into warm leads.
 
 Audience: business team, sales, product.
 

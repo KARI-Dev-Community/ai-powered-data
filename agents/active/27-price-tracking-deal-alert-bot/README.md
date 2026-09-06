@@ -1,5 +1,7 @@
 # 27. Price-Tracking / Deal-Alert Bot
 
+Part of **AI-Powered Data & Lead Platform**. Turn local market data into warm leads.
+
 Tracks product prices and sends deal alerts. Built on top of #36's history layer; uses derivative signals (velocity, moving averages) instead of naive "price < target" checks.
 
 ## Metrics

@@ -1,6 +1,8 @@
-# Legal & Tax Notes — Malaysia (One-Pager)
+# Legal & Tax Notes — Malaysia
 
-Practical compliance notes for a solo Malaysian developer running agent services as side income. **This is not legal advice — verify current rules with SSM/LHDN or a professional before acting.** Rules below current as of Aug 2026.
+AI-Powered Data & Lead Platform. Turn local market data into warm leads.
+
+Practical compliance notes for a solo Malaysian operator running this data and lead platform as side income. **This is not legal advice — verify current rules with SSM/LHDN or a professional before acting.** Rules below current as of Aug 2026.
 
 ---
 
@@ -43,9 +45,8 @@ You will process third-party personal data (scraped business contacts, client cu
 
 ## 6. What you are NOT (important boundaries)
 
-- **Not selling financial advice** → #5 stays dead; don't drift into it.
-- **Not providing legal services** → #28-style work is "document drafting tooling," never "legal advice."
-- **Not an employment agency** → #26 job board posts ads only.
+- **Not selling financial, legal, or employment services.** This platform sells market data, scored leads, and local-business ops tooling.
+- **Not reselling personal contact lists.** Scraped contacts are for outreach only.
 
 ## Decision checklist
 

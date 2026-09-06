@@ -1,4 +1,6 @@
-# System Design
+# System Design — AI-Powered Data & Lead Platform
+
+Turn local market data into warm leads.
 
 ## Data Flow
 
@@ -65,7 +67,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    subgraph Project["passive-income repo"]
+    subgraph Project["ai-powered-data repo"]
         AGENT["agents/active/36-data-moat-history-agent\n(agent.md)"]
         DB_SCHEMA["db/schema.sql"]
         SCRAPERS["scrapers/\n- google-maps/scraper.py\n- base.py"]

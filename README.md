@@ -1,34 +1,37 @@
-# Agentic Income Stack
+# AI-Powered Data & Lead Platform
 
-A dependency-ordered plan and executable codebase for building AI-agent passive income systems. Current focus: **5 active agents** across Phase 0–3.
+Turn local market data into warm leads.
 
-## Active Agents
+Collects proprietary local-market data, scores prospects, and delivers ready-to-act leads to local service businesses — with AI quality control at every step.
 
-| # | Agent | Phase | Dependencies |
-|---|---|---|---|
-| 36 | Data-Moat History Accumulation | 0 | — |
-| 27 | Price-Tracking / Deal-Alert Bot | 1 | 36 |
-| 11 | Public Data Aggregation → API | 1 | 36 |
-| 17 | Local Business Lead-Gen | 2 | 36 |
-| 30 | Customer Review Response | 3 | 36 |
+## Products
 
-All other ideas are archived in `archive/`.
+| # | Product | Role |
+|---|---|---|
+| 36 | Data-Moat History | Compounding local-market history layer |
+| 27 | Price-Tracking / Deal Alerts | Consumer signal product on the same data |
+| 11 | Public Data API | B2B access to scored, time-series datasets |
+| 17 | Local Business Lead-Gen | Warm leads from observed market pain |
+| 30 | Customer Review Response | Reputation ops upsell on the same leads |
+
+Related follow-ons (#7 chatbot, #34 approval, #35 local-services ops) live in `agents/archive/`.
 
 ## Directory Layout
 
 ```
 agents/
 ├── active/
-│   ├── 36-data-moat-history-agent/   # Phase 0: compounding data layer
-│   ├── 27-price-tracking-deal-alert-bot/  # Phase 1: consumer product
-│   ├── 11-public-data-aggregation-api/    # Phase 1: B2B API product
-│   ├── 17-local-business-lead-gen-agent/  # Phase 2: lead engine
-│   └── 30-customer-review-response-agent/ # Phase 3: first upsell
-└── archive/                       # Inactive ideas (36 total)
-db/                            # Shared Postgres schema
-scrapers/                      # Reusable scraping infra
-app/api/v1/                    # FastAPI skeleton
-scripts/                       # Validation + tooling
+│   ├── 36-data-moat-history-agent/
+│   ├── 27-price-tracking-deal-alert-bot/
+│   ├── 11-public-data-aggregation-api/
+│   ├── 17-local-business-lead-gen-agent/
+│   └── 30-customer-review-response-agent/
+└── archive/
+db/
+scrapers/
+app/api/v1/
+scripts/
+web/
 ```
 
 ## How to use an agent
@@ -47,29 +50,23 @@ To deactivate, delete the copy in `.kilo/agent/` (the original folder is untouch
 ## Quick Start
 
 ```bash
-# 1. Clone + install
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 playwright install chromium
 
-# 2. Configure
 cp .env.example .env
 # Fill in Supabase + API keys
 
-# 3. Run validation
 python3 scripts/validate-agents.py
-
-# 4. Start API
 uvicorn app.api.v1.main:app --reload --port 8000
-
-# 5. Run first scraper
 python3 scrapers/google-maps/scraper.py
 ```
 
-## Roadmap
+## Docs
 
-See [`ROADMAP.md`](./ROADMAP.md) for the phase plan and KPI gates.
-
-## Tracker
-
-See [`TRACKER.md`](./TRACKER.md) for progress, finance, and kill criteria.
+- [`ROADMAP.md`](./ROADMAP.md) — phase plan and KPI gates
+- [`TRACKER.md`](./TRACKER.md) — progress, finance, kill criteria
+- [`BUSINESS-PROPOSAL.md`](./BUSINESS-PROPOSAL.md) — product, market, GTM
+- [`CUSTOMER-JOURNEY.md`](./CUSTOMER-JOURNEY.md) — segment journeys
+- [`SYSTEM-DESIGN.md`](./SYSTEM-DESIGN.md) — architecture
+- [`TECHNICAL-SETUP.md`](./TECHNICAL-SETUP.md) — stack and accounts
