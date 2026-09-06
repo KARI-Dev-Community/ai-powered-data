@@ -4,6 +4,7 @@ import json
 import os
 import sys
 import time
+import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 from dotenv import load_dotenv
@@ -145,8 +146,14 @@ def scrape_google_maps() -> list[dict]:
     return records
 
 
+def content_hash(records: list[dict]) -> str:
+    """Stable hash for a list of records."""
+    normalized = json.dumps(records, sort_keys=True, default=str)
+    return hashlib.sha256(normalized.encode()).hexdigest()
+
+
 def save_snapshot(records: list[dict]) -> dict:
-    """Append snapshot to Supabase; never overwrite history."""
+    """Append snapshot only if content changed since last run."""
     now = datetime.now(timezone.utc).isoformat()
     provenance = {
         "source": "google-maps",
@@ -155,20 +162,34 @@ def save_snapshot(records: list[dict]) -> dict:
         "city": CITY,
     }
 
+    content_digest = content_hash(records)
+
+    last = (
+        supabase.table("snapshots")
+        .select("snapshot_id, records")
+        .eq("source_id", SOURCE_ID)
+        .order("scraped_at", desc=True)
+        .limit(1)
+        .execute()
+        .data
+    )
+
+    if last and last[0].get("records") == records:
+        print("No changes detected — skipping snapshot write")
+        return {"snapshot_id": last[0]["snapshot_id"], "skipped": True}
+
     snapshot = {
         "source_id": SOURCE_ID,
         "records": records,
         "record_count": len(records),
         "provenance": provenance,
+        "content_hash": content_digest,
     }
 
-    # We insert via RPC or direct table insert; using raw insert here for clarity
-    # In production, use a stored procedure for atomicity
     snapshot_res = supabase.table("snapshots").insert(snapshot).execute()
     snapshot_id = snapshot_res.data[0]["snapshot_id"] if snapshot_res.data else None
     snapshot["snapshot_id"] = snapshot_id
 
-    # Upsert into entity_latest for fast lookups
     for rec in records:
         entity_id = rec.get("business_name", "").lower().replace(" ", "-")
         supabase.table("entity_latest").upsert(

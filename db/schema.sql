@@ -25,12 +25,15 @@ CREATE TABLE IF NOT EXISTS snapshots (
     record_count INT NOT NULL,
     schema_version TEXT NOT NULL DEFAULT 'v1',
     provenance JSONB NOT NULL DEFAULT '{}'::jsonb,
+    content_hash TEXT NOT NULL DEFAULT '',
     UNIQUE (source_id, scraped_at)
 );
 
--- Index for time-series queries
 CREATE INDEX IF NOT EXISTS idx_snapshots_source_time
     ON snapshots (source_id, scraped_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_snapshots_content_hash
+    ON snapshots (source_id, content_hash);
 
 -- Entity deduplication / latest state per entity
 CREATE TABLE IF NOT EXISTS entity_latest (
