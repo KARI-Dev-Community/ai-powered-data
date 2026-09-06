@@ -1,6 +1,6 @@
 # 35. Local-services ops agent (quotes, scheduling, follow-up)
 
-Handles quoting, scheduling, and customer follow-up for local service businesses — plumbers, HVAC, roofers, cleaners. The highest-ticket hole in the original list of 30: it covers *revenue-generating operations*, not just reputation.
+Handles quoting, scheduling, and customer follow-up for local service businesses — plumbers, HVAC, roofers, cleaners. Covers revenue-generating operations, not just reputation.
 
 ## Metrics
 
@@ -33,7 +33,7 @@ The repo covers local businesses only on the reputation side (#30 review respons
 | Payments | Stripe | Deposit collection at quote acceptance; split payment links |
 | Notifications | Resend (email) + Twilio (SMS) | Confirmations, reminders, follow-up sequences |
 | Storage | Supabase Postgres | Rate cards, leads, quotes, appointments, follow-up state machine |
-| Monitoring | 31-agent-ops-monitoring-agent | Alert on missed-call recovery lag, quote turnaround SLA breaches |
+| Monitoring | #34 approval workflow | Alert on missed-call recovery lag, quote turnaround SLA breaches |
 | Baseline data | 36-data-moat-history-agent | Historical conversion rates, service demand patterns for scheduling optimization |
 
 ## Execution Plan

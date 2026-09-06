@@ -4,7 +4,6 @@ mode: all
 phase: 4
 depends_on:
   - 36-data-moat-history-agent
-  - 31-agent-ops-monitoring-agent
   - 35-local-services-ops-agent
 inputs:
   agent_action:

@@ -35,7 +35,7 @@ Agents can't safely hold payment credentials or make purchases (see gap analysis
 | Payments | Stripe | Tiered subscription; usage-based overages for high action volume |
 | Rollback engine | Celery + Redis | Reversible actions: auto-rollback on failure; irreversible: manual override + post-hoc review |
 | Policy engine | JSONB config per agent | Risk tiers × auto/hold/dual-approve per action type; version-controlled |
-| Monitoring | 31-agent-ops-monitoring-agent | Alert on stuck approvals, policy violations, audit log integrity, worker crashes |
+| Monitoring | #35 local-services ops | Alert on stuck approvals, policy violations, audit log integrity, worker crashes |
 | Baseline data | 36-data-moat-history-agent | Historical approval patterns for autonomy-threshold proposals and anomaly detection |
 | Human escalation | Slack + Twilio | On-call rotation for unapproved actions, rollback failures, audit corruption |
 
