@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local env & secrets
+.env
+.env.*
+*.key
+secrets/
+
+# Local data & dependencies
+node_modules/
+__pycache__/
+*.sqlite
+*.db
+venv/
+.venv/
+
+# Scratch
+/tmp/

@@ -1,0 +1,42 @@
+name: Scheduled Scraper - Google Maps
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      GMAPS_SOURCE_ID: ${{ vars.GMAPS_SOURCE_ID || 'google-maps-hvac-kuala-lumpur' }}
+      GMAPS_VERTICAL: ${{ vars.GMAPS_VERTICAL || 'hvac' }}
+      GMAPS_CITY: ${{ vars.GMAPS_CITY || 'Kuala Lumpur' }}
+      GMAPS_MAX_RESULTS: ${{ vars.GMAPS_MAX_RESULTS || '200' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Run scraper
+        run: python scrapers/google-maps/scraper.py
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-logs
+          path: /tmp/scraper-logs/
+          retention-days: 7
