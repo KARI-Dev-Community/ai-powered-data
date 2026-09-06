@@ -62,6 +62,59 @@ uvicorn app.api.v1.main:app --reload --port 8000
 python3 scrapers/google-maps/scraper.py
 ```
 
+## Activate GitHub Actions (scheduled scraping)
+
+GitHub Actions runs scrapers on a cron schedule for free. This is the cheapest scheduler for Phase 0–1.
+
+### 1. Create the workflow file
+
+Create `.github/workflows/scrape-google-maps.yml`:
+
+```yaml
+name: Scrape Google Maps
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC daily
+  workflow_dispatch:       # allow manual runs
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+      - run: playwright install chromium
+      - run: python3 scrapers/google-maps/scraper.py
+```
+
+### 2. Add repository secrets
+
+Go to **Settings → Secrets and variables → Actions** in your GitHub repo and add:
+
+| Secret | Value |
+|---|---|
+| `SUPABASE_URL` | Your Supabase project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service-role key (server-side only) |
+| `RESEND_API_KEY` | Resend API key for outreach emails |
+
+### 3. Verify it works
+
+- Commit and push the workflow file to `main`.
+- Go to **Actions** tab → select **Scrape Google Maps** → **Run workflow**.
+- Check the job log for `SUPABASE_URL` load success and rows inserted into `snapshots` / `entity_latest`.
+
+### 4. Optional: add more scrapers
+
+Duplicate the job for other scrapers (retailer prices, reviews, etc.) and adjust the cron if you need multiple schedules.
+
 ## Docs
 
 - [`ROADMAP.md`](./ROADMAP.md) — phase plan and KPI gates
